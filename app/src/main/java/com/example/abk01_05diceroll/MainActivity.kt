@@ -14,9 +14,15 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
 
-        activityMainBinding.button.setOnClickListener {
+        activityMainBinding.btnRoll.setOnClickListener {
             Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
-
+            rollDice()
         }
+    }
+
+    private fun rollDice() {
+        val dice = Dice(6)
+        val diceRoll = dice.roll()
+        activityMainBinding.tvRoll.text = diceRoll.toString()
     }
 }
