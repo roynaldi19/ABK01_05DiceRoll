@@ -14,15 +14,26 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
 
+        //lempar dadu pertama saat aplikasi di buka
+        rollDice()
+
         activityMainBinding.btnRoll.setOnClickListener {
-            Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
             rollDice()
+            Toast.makeText(this, "Dice Rolled!", Toast.LENGTH_SHORT).show()
         }
     }
 
     private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
-        activityMainBinding.tvRoll.text = diceRoll.toString()
+
+        when (diceRoll) {
+            1 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_1)
+            2 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_2)
+            3 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_3)
+            4 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_4)
+            5 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_5)
+            6 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_6)
+        }
     }
 }
