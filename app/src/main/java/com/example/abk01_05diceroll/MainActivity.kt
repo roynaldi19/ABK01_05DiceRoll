@@ -25,9 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun rollDice() {
         val dice = Dice(6)
-        val diceRoll = dice.roll()
-
-        when (diceRoll) {
+        when (dice.roll()) {
             1 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_1)
             2 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_2)
             3 -> activityMainBinding.imgRoll.setImageResource(R.drawable.dice_3)
