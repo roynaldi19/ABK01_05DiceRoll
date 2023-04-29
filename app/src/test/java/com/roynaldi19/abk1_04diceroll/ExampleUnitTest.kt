@@ -1,4 +1,4 @@
-package com.example.abk01_05diceroll
+package com.roynaldi19.abk1_04diceroll
 
 
 import org.junit.Assert.assertTrue

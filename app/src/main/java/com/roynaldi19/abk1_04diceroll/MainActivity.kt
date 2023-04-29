@@ -1,9 +1,9 @@
-package com.example.abk01_05diceroll
+package com.roynaldi19.abk1_04diceroll
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.abk01_05diceroll.databinding.ActivityMainBinding
+import com.roynaldi19.abk1_04diceroll.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
