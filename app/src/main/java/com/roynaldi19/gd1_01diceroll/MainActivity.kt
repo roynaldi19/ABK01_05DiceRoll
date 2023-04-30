@@ -1,9 +1,9 @@
-package com.roynaldi19.abk1_04diceroll
+package com.roynaldi19.gd1_01diceroll
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.roynaldi19.abk1_04diceroll.databinding.ActivityMainBinding
+import com.roynaldi19.gd1_01diceroll.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         activityMainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(activityMainBinding.root)
 
-        //lempar dadu pertama saat aplikasi di buka
         rollDice()
 
         activityMainBinding.btnRoll.setOnClickListener {

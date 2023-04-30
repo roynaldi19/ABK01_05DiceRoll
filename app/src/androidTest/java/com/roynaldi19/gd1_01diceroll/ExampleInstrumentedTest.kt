@@ -1,4 +1,4 @@
-package com.roynaldi19.abk1_04diceroll
+package com.roynaldi19.gd1_01diceroll
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
